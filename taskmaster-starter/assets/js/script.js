@@ -78,7 +78,7 @@ $(".list-group").on("blur", "textarea", function() {
     .addClass("m-1")
     .text(text);
   // replace textarea with p element
-  $(this).repalceWith(taskP);
+  $(this).replaceWith(taskP);
 });
 // due date was clicked
 $(".list-group").on("click", "span", function() {
