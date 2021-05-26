@@ -167,14 +167,15 @@ $(".card .list-group").sortable({
         date: date,
       });
     });
-      // trim down the list's ID to match object property
-      var arrName = $(this)
-        .attr("id")
-        .replace("list-", "");
       
-      // update array on tasks object and save
-      task[arrName] = tempArr;
-      saveTasks();
+  // trim down the list's ID to match object property
+    var arrName = $(this)
+      .attr("id")
+      .replace("list-", "");
+      
+    // update array on tasks object and save
+    task[arrName] = tempArr;
+    saveTasks();
 
     console.log(tempArr);
   }
